@@ -8,5 +8,7 @@ find /home/admin/web/inheridas.cl/public_html/wp-content/uploads/ -iname "*.php"
 Remove files with exceptions
 
 ```shell
+shopt -s extglob
+
 rm -v !("filename1"|"filename2") 
 ```
